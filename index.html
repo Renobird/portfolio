@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html/xml; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="robots" content="no-index,no-follow">
+	<meta name="description" content="">
+	<meta name="author" content="Tom Reno">
+
+	<!-- IE Cleartype -->
+	<meta http-equiv="cleartype" content="on">
+
+	<title>Tom Reno | Portfolio</title>
+
+	<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/styles/main.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+	<section class='top'>
+		<header>
+			<h1 class='name'>TOM RENO</h1>
+			<figure>
+				<img src='assets/images/reno-bw.jpg' />
+			</figure>
+		</header>
+	</section>
+
+	<section class='profile'>
+		<p class='intro'>Developer, designer, and leader with 15+ years experience in frontend/backend development, user-experience, and interface design. Compassionately candid collaborator, mentor, and team leader. Widely curious. Resilient. Passionate about building tools that help people work smarter.</p>
+	</section>
+
+	<section class='portfolio'></section>
+
+	<footer>
+		<a href="mailto:me@tomrenodesign.com" class='button'>Contact Me</a> <a href="http://tomrenodesign.com/portfolio" class='button'>View some old work</a>
+	</footer>
+
+	<div id="modal" style="display: none">
+		<div class="overlay"></div>
+		<div class="modal_content"></div>
+		<div class="close"></div>
+	</div>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="assets/scripts/dist/reno.js"></script>
+	<script>
+		animateName.init();
+		portfolio.init();
+		viewer.init();
+		AOS.init({duration: 1000,});
+	</script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+@import "_vars.scss";
+
+/* 
+*
+* Everything is nested in a way that largely matches HTML structure.
+* This is not best practice, and not how I would approach anything larger than this single page site.
+* 
+*
+*/
+
+* { 
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5% 
+}
+
+body{
+	
+	font-family: $sans, sans-serif;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	color: $text-light;
+	text-rendering: optimizeLegibility;
+	font-weight: normal;
+	overflow-x: hidden;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+
+section{
+	position: relative;
+	margin: 3rem auto 15rem auto;
+	padding: 0 6rem;
+	max-width: $max-width;
+}
+
+section.top{
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0;
+	width: 100%;
+	position: relative;
+
+	header{
+		transition: all 1.5s ease;
+		margin: 0 auto 6rem auto;
+		padding: 0;
+		max-width: $max-width;
+
+		figure{
+			margin: 0 auto;
+			width: 360px;
+
+
+			img{
+				background-color: #efefef;
+				width: 100%;
+				border-radius: 50%;
+			}
+		}
+
+		// Media Queries for header
+		@media only screen and (min-width: 1000px) and (max-width: 1200px){
+			padding: 12rem 6rem 12rem 6rem;
+		}
+
+		@media only screen and (min-width: 1200px){
+			padding: 12rem 6rem 12rem 6rem;
+			margin: 0 auto 12rem auto;
+		}
+	}
+
+}
+
+section.profile{
+	margin: 3rem auto 3rem auto;
+
+	p.intro {
+		font-weight: normal;
+		font-size: 2.4rem;
+		line-height: 3.4rem;
+		color: $text-light;
+		margin: 3rem auto;
+		max-width: 840px;
+		position: relative;
+		z-index: 3;
+		text-align: center;
+
+		&:before{
+			content: '';
+			position: absolute;
+			width: 60px;
+			height: 8px;
+			border-radius: 3px;
+			top: -4rem;
+			left: calc(50% - 30px);
+			background-color: $accent;
+		}
+
+		// media queries for .intro
+		@media only screen and (min-width: 200px) and (max-width: 600px){
+			font-size: 1.8rem;
+			line-height: 2.4rem;
+		}
+
+	}
+
+}
+
+section.portfolio{
+	position: relative;
+	z-index: 3;
+	background-color: #fff;
+
+	&:after{
+		position: absolute;
+		background: #fff;
+		height: 100%;
+		right: -4000px;
+    	left: -4000px;
+		top: -75px;
+		height: 1000px;
+		content: '';
+		bottom: 0;
+		transform: rotate(2deg);
+		z-index: -1;
+	}
+
+	article {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 80px 0;
+
+		// reverse the order of images/text for alternating articles
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+		}
+
+		// media queries for article
+		@media only screen and (min-width: 820px) and (max-width: 1200px){ margin: 100px 0; }
+		@media only screen and (min-width: 1200px){ margin: 160px 0;}
+
+		.col {
+
+			&.image{
+				
+				width: 100%; 
+
+				a {
+					line-height: 0;
+					padding: 10px;
+					background-color: #fff;
+					box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+					border-radius: 5px;
+					overflow: hidden;
+					display: block;
+				}
+				
+				img {
+					max-width: 100%;
+					line-height: 0;
+					border-radius: 5px;
+					transition: transform .5s; 
+					
+					&:hover {
+					  transform: scale(1.04);
+					}
+
+				}
+
+				// media quiers for .image
+				@media only screen and (min-width: 820px) and (max-width: 1030px){ width: 40%;}
+				@media only screen and (min-width: 1030px){ width: 50%;}
+
+			}
+
+			&.text{
+				width: 100%; 
+				padding: 3rem 0 0 0;
+				
+				&.even {
+					padding: 3rem 4rem 0 0;
+				}
+
+				p {
+					font-size: 1.6rem;
+					line-height: 2.4rem;
+
+					@media only screen and (min-width: 1030px){
+						font-size: 1.8rem;
+						line-height: 2.8rem;
+					}
+				}
+
+				ul.tags{
+					list-style-type: none;
+					margin: 3rem 0 0 0;
+					padding: 0;
+					
+					li {
+					 	display: inline-block;
+					 	padding: 5px 10px;
+					 	margin: 0 5px 5px 0;
+					 	border-radius: 3px;
+					 	font-size: 14px;
+					 	background-color: $bg_light;
+					 }
+				}
+
+				// media queries for .text
+				@media only screen and (min-width: 820px) and (max-width: 1200px){ padding: 0rem 4rem 0 4rem;}
+				@media only screen and (min-width: 1200px) {padding: 8rem 8rem 0 8rem;}
+				@media only screen and (min-width: 820px) and (max-width: 1030px){ width:60%;}
+				@media only screen and (min-width: 1030px){width: 50%;}
+
+			}
+		}
+	}
+}
+
+footer{
+	margin: 30rem auto 0 auto;
+	text-align: center;
+	padding-bottom: 30rem;
+	border-bottom: 6rem solid #e8e8e8;
+	background-color: #fff;
+
+	a.button {
+		color: $accent;
+		background-color: #fff;
+		border: 1px solid $accent;
+		padding: 1.5rem 3.2rem;
+		border-radius: 3rem;
+		margin: 0 1rem;
+		text-align: center;
+		text-decoration: none;
+		transition: all .5s ease;
+
+		&:hover{
+			color: #fff;
+			background-color: $accent;
+		}
+	}
+}

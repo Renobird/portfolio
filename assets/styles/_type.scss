@@ -1,0 +1,83 @@
+h1 {
+	font-weight: 900;
+	font-size: 5rem;
+	color: $text;
+	margin: 0 auto;
+	opacity: 0.1;
+	position: fixed;
+	top: 0;
+	padding-top: 30rem;
+	max-width: 1280px;
+	text-align: center;
+	display: none;
+
+	&.letters{
+
+		@media only screen and (min-width: 1000px) and (max-width: 1200px){
+			font-size: 14.8rem;
+			display: block;
+		}
+
+		@media only screen and (min-width: 1200px){
+			font-size: 19rem;
+			display: block;
+		}
+	}
+	
+	&.name {
+		text-align: center;
+		position: initial;
+		margin: 4rem 0 4rem 0;
+		padding: 0;
+		font-size: 7rem;
+		
+		@media only screen and (min-width: 200px) and (max-width: 600px){
+			display: block;
+		}
+
+		@media only screen and (min-width: 600px) and (max-width: 850px){
+			font-size: 10rem;
+			display: block;
+		}
+
+		@media only screen and (min-width: 850px) and (max-width: 1000px){
+			display: block;
+			font-size: 14rem;
+		}
+
+	}
+
+	&.reset{
+		span {
+			transition: all 1.5s ease;
+		}
+	}
+
+	}
+
+h2 {
+	font-weight: normal;
+	font-size: 2.4rem;
+	line-height: 3.4rem;
+	margin: 30px 0 0 0;
+	color: #61666D;
+	padding-right: 400px;
+	position: relative;
+
+	&:before{
+		content: '';
+		position: absolute;
+		width: 60px;
+		height: 8px;
+		border-radius: 3px;
+		top: -3rem;
+		background-color: #37CE74;
+	}
+}
+
+h3 {
+	font-size: 3.2rem;
+	line-height: 4.2rem;
+	margin: 0 0 2.0rem 0;
+	color: $text;
+}

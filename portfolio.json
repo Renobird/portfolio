@@ -1,0 +1,191 @@
+{
+    "data": [
+
+    	{
+	        "title": "Center for Aquatic and Invasive Plants",
+	        "body": "This is a multi-year project the Center for Aquatic and Invasive Plants. Their primary site hosts a database of invasive plants, information on how to identify them, their allowable usage and management. This content is accessed daily by government agencies, industry, and researchers. Currently still in design review.",
+	        "thumb": "caip-home.png",
+	        "href": false,
+	        "tags": ["Design", "Information Architecture", "Content Strategy", "Frontend Dev (HTML/CSS/JS)", "Backend Dev (PHP)", "Database Design", "CMS Development"],
+	        "animations": {
+	        	"text": "",
+				"image": "",
+				"text_offset": "",
+				"img_offset": ""
+	        },
+	        "full_images": [
+				{ 
+				"caip-full-2x.png": "",
+				"caip-filters-open.png": "Filtering options in the plant directory",
+				"caip-filters-active.png": "View after selecting filters"
+				}
+			]
+    	},
+    	{
+	        "title": "Imagining America",
+	        "body": "Imagining America at the University of Florida supports UF faculty, staff, and students working in the arts, humanities, and design to further explore the ways in which scholarship, teaching, and service in these fields can engage stakeholders outside of academia. This site will feature event listings and stories pulled from multiple internal and external data sources. Design work for this project also included the IA logo. The project is still in design review.",
+	        "thumb": "ia-thumb.png",
+	        "href": false,
+	        "tags": ["Design", "Content Strategy", "Frontend Dev (HTML/CSS/JS)", "Backend Dev (PHP)", "ProcessWire CMS", "Logo Design"],
+	        "animations": {
+	        	"text": "zoom-in-up",
+				"image": "fade-right",
+				"text_offset": "200",
+				"img_offset": "200"
+	        },
+	        "full_images": [
+				{ 
+				"ia-home-2x.png": ""
+				}
+			]
+    	},
+    	{
+	        "title": "Support Desk Web App",
+	        "body": "One of the web applications I developed at the College of the Arts. It is the primary software for several IT staff members, and used daily throughout the college for a variety of support requests. Utilizes the Admin UI I developed for ProcessWire CMS (Detailed below).",
+	        "thumb": "cota-support-thumb.png",
+	        "href": false,
+	        "tags": ["User Interface Design", "Content Strategy", "User Experience", "Frontend Dev (HTML/CSS/JS)", "Backend Dev (PHP)", "API Development"],
+	        "animations": {
+	        	"text": "zoom-in-up",
+				"image": "fade-right",
+				"text_offset": "200",
+				"img_offset": "200"
+	        },
+	        "full_images": [
+				{ 
+				"support-desk-ticket.png": "",
+				"support-desk-list.png": ""
+				}
+			]
+    	},
+    	{
+	        "title": "UF/IFAS Assessment",
+	        "body": "The UF/IFAS Assessment of Non-native Plants in Florida’s Natural Areas uses literature-based assessment tools to evaluate the invasion risk of non-native species that occur in the state. The site is predominantly a publicly accessible database of non-native plants and the assessments of their invasion risks. ",
+	        "thumb": "ifas-assessment-thumb.png",
+	        "href": "https://assessment.ifas.ufl.edu",
+	        "tags": ["Design", "Content Strategy", "Frontend Dev (HTML/CSS/JS)", "Backend Dev (PHP)", "Admin Interface Design", "ProcessWire CMS"],
+	        "animations": {
+	        	"text": "zoom-in-up",
+				"image": "fade-right",
+				"text_offset": "200",
+				"img_offset": "200"
+	        },
+	        "full_images": [{}]
+    	},
+    	{
+	        "title": "Travel & Expenses App",
+	        "body": "The most widely used web application we developed at the college. This application allows faculty/staff to manage their travel and expenses. Administrators can review requests, provide funding, and perform a variety of actions. Travelers can upload receipts and submit critical documentation while they are traveling. This system contains sensitive and restricted data, so I'm limited in what I can show here.",
+	        "thumb": "travel-thumb.png",
+	        "href": false,
+	        "tags": ["User Interface Design", "User Experience", "Frontend Dev (HTML/CSS/JS)", "Backend Dev (PHP)", "API Development"],
+	        "animations": {
+	        	"text": "zoom-in-up",
+				"image": "fade-right",
+				"text_offset": "200",
+				"img_offset": "200"
+	        },
+	        "full_images": [
+				{ 
+				"travel-ta.png": ""
+				}
+			]
+    	},
+    	{
+	        "title": "Activity Log",
+	        "body": "Admin module for ProcessWire CMS that logs content changes. Includes a diff feature for textareas and images and can be used to review content revisions by administrators. Predominantly used by COTA web apps for auditing and compliance purposes.",
+	        "thumb": "activity-log-thumb.png",
+	        "href": "https://github.com/Renobird/MarkupActivityLog",
+	       	"tags": ["User Interface Design", "Frontend Dev (HTML/CSS/JS)", "Backend Dev (PHP)"],
+	        "animations": {
+	        	"text": "zoom-in-up",
+				"image": "fade-right",
+				"text_offset": "200",
+				"img_offset": "200"
+	        },
+	        "full_images": [{}]
+    	},
+    	{
+	        "title": "ProcessWire Admin UI",
+	        "body": "ProcessWire is an open source content management system and framework. I have contributed as a development team member, forum moderator, and community member since 2011. AdminThemeReno was initially developed about 4 years ago. I have been working on a significant refresh that is scheduled for release later this year.",
+	        "thumb": "pw-admin-thumb.png",
+	        "href": false,
+	       	"tags": ["User Interface Design", "Frontend Dev (HTML/CSS/JS)", "Backend Dev (PHP)"],
+	        "animations": {
+	        	"text": "zoom-in-up",
+				"image": "fade-right",
+				"text_offset": "200",
+				"img_offset": "200"
+	        },
+	        "full_images": [
+				{ 
+				"pw-admin-assessments.png": "",
+				"pw-admin.png": "",
+				"pw-admin-template.png": "",
+				"pw-admin-images.png": "Image Management"
+				}
+			]
+    	},
+    	{
+	        "title": "College of the Arts",
+	        "body": "Originally designed and developed about 5 years ago, this site has been a workhorse for the college. We are in the strategic planning phase for a new look-and-feel to launch Summer 2020.",
+	        "thumb": "cota-thumb.png",
+	        "href": false,
+	       	"tags": ["Design", "Information Architecture", "Content Strategy", "User Experience", "Frontend Dev (HTML/CSS/JS)", "Backend Dev (PHP)", "Admin Interface Design", "CMS Development", "Single Sign-On", "Role Based Access Control", "API Development"],
+	        "animations": {
+	        	"text": "zoom-in-up",
+				"image": "fade-right",
+				"text_offset": "200",
+				"img_offset": "200"
+	        },
+	        "full_images": [
+				{ 
+				"cota-loop.png": "",
+				"cota-dw.png": "Digital Worlds Institute Landing Page",
+				"cota-apply.png": "Application procedures for the MxD program"
+				}
+			]
+    	},
+    	{
+	        "title": "College of the Arts Visual Identity System",
+	        "body": "I designed and developed an identity system for the college and the 5 academic units. Initially intended for web use only, the design was expanded to print by college leadership. Each of these panels represents a sample of usage options and were created for the initial design pitch to university and college leadership.",
+	        "thumb": "cota-identity-thumb.png",
+	        "href": false,
+	        "tags": ["Graphic Design"],
+	        "animations": {
+	        	"text": "zoom-in-up",
+				"image": "fade-right",
+				"text_offset": "200",
+				"img_offset": "200"
+	        },
+	        "full_images": [
+				{ 
+				"cota-panels.png": "",
+				"cota-som-panels.png": "",
+				"cota-sotd-panels.png": ""
+				}
+			]
+    	},
+    	{
+	        "title": "The Mercury Program",
+	        "body": "Record covers for selected releases. Additional examples of older designs, posters, t-shirts and other material available in my legacy portfolio site linked at the bottom of the site",
+	        "thumb": "tmp-thumb.png",
+	        "href": false,
+	        "tags": ["Graphic Design"],
+	        "animations": {
+	        	"text": "zoom-in-up",
+				"image": "fade-right",
+				"text_offset": "200",
+				"img_offset": "200"
+	        },
+	        "full_images": [
+				{ 
+				"cover_blue_web.png": "",
+				"cover_white_web.png": "",
+				"cover_purple_clear.png": "",
+				"cover_purple_white.png": "",
+				"cover_purple_vinyl.png": ""
+				}
+			]
+    	}
+	]
+}

@@ -1,0 +1,44 @@
+@import "_vars.scss";
+
+.portfolio-grid {
+	transition: all $length $effect;
+	column-gap: $gap;
+	column-fill: initial;
+	margin: 0;
+	padding: 0;
+
+	li {
+		margin-bottom: $gap;
+		display: inline-block; 
+		vertical-align: top; 
+		border: 1px solid #e0e0e0;
+		box-shadow: $shadow;
+
+		img {
+			transition: all $length $effect;
+			backface-visibility: hidden; 
+			width: 100%;
+		}
+
+		a.title{
+			min-width: 200px;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 18px;
+			color: #222;
+		}
+	}
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.portfolio-grid {
+		column-count: 3;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.portfolio-grid {
+		column-count: 4;
+	}
+}
