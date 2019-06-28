@@ -24,7 +24,7 @@
     	{
 	        "title": "Imagining America",
 	        "body": "Imagining America at the University of Florida supports UF faculty, staff, and students working in the arts, humanities, and design to further explore the ways in which scholarship, teaching, and service in these fields can engage stakeholders outside of academia. This site will feature event listings and stories pulled from multiple internal and external data sources. Design work for this project also included the IA logo. The project is still in design review.",
-	        "thumb": "ia-thumb.png",
+	        "thumb": "IA-thumb.png",
 	        "href": false,
 	        "tags": ["Design", "Content Strategy", "Frontend Dev (HTML/CSS/JS)", "Backend Dev (PHP)", "ProcessWire CMS", "Logo Design"],
 	        "animations": {
@@ -35,7 +35,7 @@
 	        },
 	        "full_images": [
 				{ 
-				"IA-home-2x.png": ""
+				"ia-home-2x.png": ""
 				}
 			]
     	},
