@@ -15,7 +15,7 @@
 	        },
 	        "full_images": [
 				{ 
-				"caip-full-2x.png": "",
+				"CAIP-full-2x.png": "",
 				"caip-filters-open.png": "Filtering options in the plant directory",
 				"caip-filters-active.png": "View after selecting filters"
 				}
@@ -35,7 +35,7 @@
 	        },
 	        "full_images": [
 				{ 
-				"ia-home-2x.png": ""
+				"IA-home-2x.png": ""
 				}
 			]
     	},
