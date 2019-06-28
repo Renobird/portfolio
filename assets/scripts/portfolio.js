@@ -40,7 +40,7 @@ const portfolio = {
 			var markup = `
 						<article>
 							<div class='col image' data-aos='${entry.animations.image}' data-aos-once='once' data-aos-offset='${entry.animations.img_offset}'>
-								<a href='${href}' target='blank'><img src='assets/images/${entry.thumb}' data-large='${full_images}' class='${class_name}' title='img' alt='blah'/></a>
+								<a href='${href}' target='blank'><img src='assets/images/${entry.thumb}' data-large='${full_images}' class='${class_name}' title='img' alt='${entry.thumb}'/></a>
 							</div>
 							<div class='col text' data-aos='${entry.animations.text}' data-aos-once='once' data-aos-offset='${entry.animations.text_offset}' >
 								<h3>${entry.title}</h3>
