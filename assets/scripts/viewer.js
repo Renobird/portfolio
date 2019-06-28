@@ -19,8 +19,10 @@ const viewer = {
 	},
 
 	closeModal: function() {
+		var container = this.modal.querySelector(this.container);
 		this.modal.style.display = 'none';
-		this.modal.querySelector(this.container).innerHTML = ''; // clear old content
+		container.scrollTop = 0; // reset scroll position
+		container.innerHTML = ''; // clear old content
 		this.bodyScroll(true); 
 	},
 
