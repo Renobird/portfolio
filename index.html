@@ -22,38 +22,40 @@
 
 </head>
 <body>
-	<section class='top'>
-		<header>
-			<h1 class='name'>TOM RENO</h1>
-			<figure>
-				<img src='assets/images/reno-bw.jpg' />
-			</figure>
-		</header>
-	</section>
+	<div class='wrapper'>
+		<section class='top'>
+			<header>
+				<h1 class='name'>TOM RENO</h1>
+				<figure>
+					<img src='assets/images/reno-bw.jpg' />
+				</figure>
+			</header>
+		</section>
 
-	<section class='profile'>
-		<p class='intro'>Developer, designer, and leader with 15+ years experience in frontend/backend development, user-experience, and interface design. Compassionately candid collaborator, mentor, and team leader. Widely curious. Resilient. Passionate about building tools that help people work smarter.</p>
-	</section>
+		<section class='profile'>
+			<p class='intro'>Developer, designer, and leader with 15+ years experience in frontend/backend development, user-experience, and interface design. Compassionately candid collaborator, mentor, and team leader. Widely curious. Resilient. Passionate about building tools that help people work smarter.</p>
+		</section>
 
-	<section class='portfolio'></section>
+		<section class='portfolio'></section>
 
-	<footer>
-		<a href="mailto:me@tomrenodesign.com" class='button'>Contact Me</a> <a href="http://tomrenodesign.com/portfolio" class='button'>View some old work</a>
-	</footer>
+		<footer>
+			<a href="mailto:me@tomrenodesign.com" class='button'>Contact Me</a> <a href="http://tomrenodesign.com/portfolio" class='button'>View some old work</a>
+		</footer>
 
-	<div id="modal" style="display: none">
-		<div class="overlay"></div>
-		<div class="modal_content"></div>
-		<div class="close"></div>
+		<div id="modal" style="display: none">
+			<div class="overlay"></div>
+			<div class="modal_content"></div>
+			<div class="close"></div>
+		</div>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script src="assets/scripts/dist/reno.js"></script>
+		<script>
+			animateName.init();
+			portfolio.init();
+			viewer.init();
+			AOS.init({duration: 1000,});
+		</script>
 	</div>
-
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script src="assets/scripts/dist/reno.js"></script>
-	<script>
-		animateName.init();
-		portfolio.init();
-		viewer.init();
-		AOS.init({duration: 1000,});
-	</script>
 </body>
 </html>

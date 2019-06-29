@@ -17,6 +17,10 @@ html {
 	overflow-x: hidden;
 }
 
+.wrapper {
+	overflow-x: hidden; // iOS overflow-x fix
+}
+
 body{
 	
 	font-family: $sans, sans-serif;
