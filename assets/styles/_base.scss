@@ -14,11 +14,6 @@
 
 html {
 	font-size: 62.5%;
-	overflow-x: hidden;
-}
-
-.wrapper {
-	overflow-x: hidden; // iOS overflow-x fix
 }
 
 body{
@@ -29,11 +24,15 @@ body{
 	color: $text-light;
 	text-rendering: optimizeLegibility;
 	font-weight: normal;
-	overflow-x: hidden;
 
 	&.no-scroll {
 		overflow: hidden;
 	}
+}
+
+
+.wrapper {
+	overflow-x: hidden; // iOS overflow-x fix
 }
 
 section{
